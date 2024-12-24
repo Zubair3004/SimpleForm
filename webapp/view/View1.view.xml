@@ -1,0 +1,135 @@
+<mvc:View xmlns:table="sap.ui.table" xmlns:form="sap.ui.layout.form" controllerName="employees.controller.View1"
+    xmlns:l= "sap.ui.layout"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+        <form:SimpleForm id="idSimpleForm" editable="true" layout="ResponsiveGridLayout"
+        labelSpanXL="4" labelSpanL="4" labelSpanM="3" columnsXL="5" columnsM="8" columnsL="5" emptySpanXL="3" emptySpanL="3" emptySpanM="1">
+            <Title text="My Form"/>
+            <form:content>
+                <Label text="{i18n>EmpId}"/>
+                <Input></Input>
+                <Label text="{i18n>FirstName}"/>
+                <Input>
+                    <layoutData>
+                        <l:GridData span="XL2 L2 M2"></l:GridData>
+                    </layoutData>
+                </Input>
+                <Input>
+                    <layoutData>
+                        <l:GridData span="XL2 L2 M3"></l:GridData>
+                    </layoutData>
+                </Input>
+                <Input>
+                    <layoutData>
+                        <l:GridData span="XL2 L2 M3"></l:GridData>
+                    </layoutData>
+                </Input>
+                <Label text="{i18n>Salary}"/>
+                <Input>
+                </Input>
+                <Input>
+                </Input>
+                <Label text="{i18n>City}"/>
+                <Input/>
+             </form:content>
+        </form:SimpleForm>
+
+        <form:SimpleForm id="idSimpleform2" editable="true" layout="ResponsiveGridLayout" class="noTitle sapUiFormTitle"
+            labelSpanL="4" columnsL="2" emptySpanL="0"
+            labelSpanM="4" columnsM="2" emptySpanM="0"
+            labelSpanS="12" emptySpanS="0"
+            adjustLabelSpan="false" singleContainerFullSize="false"> 
+            <Title text="Exceedra Recon Report"/>
+            <form:content>
+                <core:Title></core:Title>
+                <Label text="Sales Organisation"/>
+                <Input width="15em"/>
+                <Label text="Start Date"/>
+                <DatePicker width="15em"/>
+                <Label text="Customer"/>
+                <Input width="15em"/>
+                <Label text="Source Id"/>
+                <Input width="15em"/>
+                <core:Title></core:Title>
+                <Label text="Distrubution Channel"/>
+                <Input width="15em"/>
+                <Label text="End Date"/>
+                <DatePicker width="15em"/>
+                <Label text="Product"/>
+                <Input width="15em"/>
+                <Label text="File Date"/>
+                <DatePicker width="15em"/>
+            </form:content>
+            <Label/>
+            <Button text="Execute" type="Emphasized" width="10em"/>
+        </form:SimpleForm>
+
+        <form:SimpleForm id="idSimpleform3" editable="true" layout="ResponsiveGridLayout" class="noTitle sapUiFormTitle"
+        labelSpanL="3" columnsL="3" emptySpanL="0"
+        labelSpanM="4" columnsM="1" emptySpanM="0"
+        labelSpanS="12" emptySpanS="0" title="Blocked stock noti report">
+            <form:content>
+                <core:Title/>
+                <Label text="Plant"/>
+                <Input width="15em"/>
+                <Label text="Material"/>
+                <Input width="15em" />
+                <Label text="Batch"/>
+                <Input width="15em"/>
+                <Label text="Handling Unit"/>
+                <Input width="15em"/>
+                <Label text="Quality Notification"/>
+                <Input width="15em"/>
+                <core:Title/>
+                <Label text="Storage Location"/>
+                <Input width="15em"/>
+                <Label text="Production Order"/>
+                <Input width="15em"/>
+                <Label text="Logistic Reason Code Group"/>
+                <Input width="15em"/>
+                <Label text="Logistic Reason code"/>
+                <Input width="15em"/>
+                <Label text="Quality Reason Code group"/>
+                <Input width="15em"/>
+                <core:Title/>
+                <Label text="Quality Reason Code"/>
+                <Input width="15em"/>
+                <Label text="Supplier"/>
+                <Input width="15em"/>
+                <Label text="Customer"/>
+                <Input width="15em"/>
+                <Label text="Change Date Range"/>
+                <DatePicker width="15em"/>
+            </form:content>
+            <Label/>
+            <Button type="Emphasized" width="10em" text="Execute"/>
+        </form:SimpleForm>
+
+        <form:SimpleForm id="idSimpleform4" editable="true" layout="ResponsiveGridLayout" class="noTitle sapUiFormTitle"
+        labelSpanL="4" columnsL="3" emptySpanL="0"
+        labelSpanM="4" columnsM="2" emptySpanM="0"
+        labelSpanS="12" emptySpanS="0" title="Agri pea regrade">
+            <form:content>
+                <Label text="Plant"/>
+                <Input width="12em"/>
+                <Label text="Old Material"/>
+                <Input width="12em" />
+                <core:Title/>
+                <Label text="New Material"/>
+                <Input width="12em"/>
+                <Label text="Batch"/>
+                <Input width="12em"/>
+                 <core:Title/>
+                <Label text="Storage Location"/>
+                <Input width="12em"/>
+                <Label/>
+                <Button type="Emphasized" width="8em" text="Execute"/>
+                <Button type="Emphasized" width="8em" text="Post"/>
+            </form:content>
+        </form:SimpleForm>
+        </content>
+    </Page>
+</mvc:View>
