@@ -36,13 +36,11 @@
                 <Input/>
              </form:content>
         </form:SimpleForm>
-
         <form:SimpleForm id="idSimpleform2" editable="true" layout="ResponsiveGridLayout" class="noTitle sapUiFormTitle"
             labelSpanL="4" columnsL="2" emptySpanL="0"
             labelSpanM="4" columnsM="2" emptySpanM="0"
             labelSpanS="12" emptySpanS="0"
             adjustLabelSpan="false" singleContainerFullSize="false"> 
-            <Title text="Exceedra Recon Report"/>
             <form:content>
                 <core:Title></core:Title>
                 <Label text="Sales Organisation"/>
